@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="is">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Þín íslenska mynstraleiðangur</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://code.iconify.design/3/3.1.1/iconify.min.js" defer></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="layout">
+      <aside class="sidebar" aria-label="Yfirlit yfir skref">
+        <div class="sidebar__inner">
+          <div class="sidebar__brand">
+            <span class="sidebar__emoji">🌟</span>
+            <div>
+              <p class="sidebar__title">Mynstraleiðangur</p>
+              <p class="sidebar__subtitle">7 skref</p>
+            </div>
+          </div>
+
+          <div class="sidebar__progress">
+            <span class="sidebar__progress-label">Lokið</span>
+            <div class="sidebar__progress-bar" aria-hidden="true">
+              <div class="sidebar__progress-fill" id="progressBar"></div>
+            </div>
+            <span class="sidebar__progress-count"><span id="progressCount">0</span>/7</span>
+          </div>
+
+          <nav class="sidebar__nav" id="stepNav">
+            <button class="sidebar__link active" data-target="step-0"><span>0.</span> Fyrst smá ró</button>
+            <button class="sidebar__link" data-target="step-1"><span>1.</span> Opnaðu Figma</button>
+            <button class="sidebar__link" data-target="step-2"><span>2.</span> Búðu til striga</button>
+            <button class="sidebar__link" data-target="step-3"><span>3.</span> Kynntu þér verkfærin</button>
+            <button class="sidebar__link" data-target="step-4"><span>4.</span> Skapaðu Ísland</button>
+            <button class="sidebar__link" data-target="step-5"><span>5.</span> Skoðaðu verkið</button>
+            <button class="sidebar__link" data-target="step-6"><span>6.</span> Deildu og skilaðu</button>
+          </nav>
+        </div>
+      </aside>
+
+      <main class="main">
+        <header class="hero">
+          <div class="hero__content">
+            <span class="hero__tag">🎨 Skapandi ferð</span>
+            <h1>Þín íslenska mynstraleiðangur</h1>
+            <p>
+              Lærðu grunnverkfæri í Figma með skýrum skrefum, litum og einföldum hugmyndum.
+              Þú býrð til mynstur eða tákn sem minnir á Ísland og deilir því með bekknum.
+            </p>
+            <div class="hero__chips">
+              <span>45–60 mínútur</span>
+              <span>7 skref</span>
+              <span>Loka með Figma-hlekk</span>
+            </div>
+          </div>
+          <div class="hero__card hint">
+            <button class="hint__toggle" type="button" aria-expanded="false" aria-controls="hero-hint">
+              <span class="hint__emoji" aria-hidden="true">💡</span>
+              <span class="hint__text">Hvað þarftu til að byrja?</span>
+            </button>
+            <div class="hint__panel" id="hero-hint" hidden>
+              <p>Það er allt sem þú þarft:</p>
+              <ul>
+                <li>Tölvu með nettengingu</li>
+                <li>Aðgang að Figma</li>
+                <li>Tilbúið hugmyndaflug</li>
+              </ul>
+            </div>
+          </div>
+        </header>
+
+        <section class="intro-tiles">
+          <article class="card card--tile">
+            <h2>Markmið</h2>
+            <p>Búa til einfalt en fallegt listaverk sem tengist íslenskri náttúru eða menningu.</p>
+          </article>
+          <article class="card card--tile">
+            <h2>Skref</h2>
+            <p>Fylgdu hverju skrefi og merktu við þegar þú klárar. Minna stress, meiri gleði.</p>
+          </article>
+          <article class="card card--tile">
+            <h2>Spurðu</h2>
+            <p>Ef eitthvað er óskýrt, spurðu kennarann strax. Það er hluti af ferlinu.</p>
+          </article>
+        </section>
+
+        <section class="steps" id="skref">
+          <article class="step step--open" id="step-0" data-step-index="0">
+            <header class="step__header">
+              <div class="step__meta">
+                <span class="step__number">0</span>
+                <h2>Fyrst smá ró</h2>
+              </div>
+              <div class="step__actions">
+                <label class="step__check">
+                  <input type="checkbox" class="step__checkbox" aria-label="Lokið skrefi 0" />
+                  <span>Lokið</span>
+                </label>
+                <button class="step__toggle" aria-expanded="true" aria-controls="step-0-content">
+                  <span class="step__toggle-icon"></span>
+                </button>
+              </div>
+            </header>
+            <div class="step__content" id="step-0-content">
+              <p>
+                Þetta er ferð, ekki próf. Þú mátt prófa liti, form og hugmyndir. Spurðu kennarann
+                ef eitthvað er óljóst. Við gerum þetta skref fyrir skref. 😊
+              </p>
+            </div>
+          </article>
+
+          <article class="step step--collapsed" id="step-1" data-step-index="1">
+            <header class="step__header">
+              <div class="step__meta">
+                <span class="step__number">1</span>
+                <h2>Opnaðu Figma</h2>
+              </div>
+              <div class="step__actions">
+                <label class="step__check">
+                  <input type="checkbox" class="step__checkbox" aria-label="Lokið skrefi 1" />
+                  <span>Lokið</span>
+                </label>
+                <button class="step__toggle" aria-expanded="false" aria-controls="step-1-content">
+                  <span class="step__toggle-icon"></span>
+                </button>
+              </div>
+            </header>
+            <div class="step__content" id="step-1-content">
+              <p>
+                Ef þú ert þegar innskráð/ur í Figma getur þú sleppt innskráningarliðnum hér að neðan og haldið áfram.
+              </p>
+              <ul>
+                <li>Opnaðu vafrann og farðu á <a href="https://www.figma.com" target="_blank" rel="noopener">figma.com</a>.</li>
+                <li>Smelltu á <strong>Log In</strong> og skráðu þig inn ef þú sérð innskráningargluggann. <span class="tag tag--optional">valfrjálst</span></li>
+                <li>Veldu verkefnahópinn eða einka-svæðið þitt og opnaðu stjórnborðið.</li>
+                <li>Skoðaðu efstu verkefnin í smá stund ef þú vilt fá hugmyndir.</li>
+              </ul>
+              <p class="step__tip">💡 Ráð: Prufaðu „Dark Mode“ ef þér líkar dökkur bakgrunnur.</p>
+            </div>
+          </article>
+
+          <article class="step step--collapsed" id="step-2" data-step-index="2">
+            <header class="step__header">
+              <div class="step__meta">
+                <span class="step__number">2</span>
+                <h2>Búðu til striga</h2>
+              </div>
+              <div class="step__actions">
+                <label class="step__check">
+                  <input type="checkbox" class="step__checkbox" aria-label="Lokið skrefi 2" />
+                  <span>Lokið</span>
+                </label>
+                <button class="step__toggle" aria-expanded="false" aria-controls="step-2-content">
+                  <span class="step__toggle-icon"></span>
+                </button>
+              </div>
+            </header>
+            <div class="step__content" id="step-2-content">
+              <p>
+                Smelltu á <strong>Team Projects</strong> → <strong>+ Create</strong> → <strong>Design File</strong>.
+                Þá færðu tóman striga sem þú stýrir.
+              </p>
+              <p>Gefðu skránni einfalt nafn, t.d. „Mynstur frá Íslandi“.</p>
+            </div>
+          </article>
+
+          <article class="step step--collapsed" id="step-3" data-step-index="3">
+            <header class="step__header">
+              <div class="step__meta">
+                <span class="step__number">3</span>
+                <h2>Kynntu þér verkfærin</h2>
+              </div>
+              <div class="step__actions">
+                <label class="step__check">
+                  <input type="checkbox" class="step__checkbox" aria-label="Lokið skrefi 3" />
+                  <span>Lokið</span>
+                </label>
+                <button class="step__toggle" aria-expanded="false" aria-controls="step-3-content">
+                  <span class="step__toggle-icon"></span>
+                </button>
+              </div>
+            </header>
+            <div class="step__content" id="step-3-content">
+              <div class="toolbelt">
+                <article class="card card--mini tool">
+                  <span class="tool__icon" aria-hidden="true">
+                    <span class="iconify" data-icon="mdi:rectangle-outline"></span>
+                  </span>
+                  <div class="tool__info">
+                    <h3>Formtólið</h3>
+                    <p>Teiknar ferninga og rétthyrninga. Fullkomið fyrir hús, glugga og ísjakka.</p>
+                    <span class="tool__shortcut">Flýtilykill: R</span>
+                  </div>
+                </article>
+                <article class="card card--mini tool">
+                  <span class="tool__icon" aria-hidden="true">
+                    <span class="iconify" data-icon="mdi:circle-outline"></span>
+                  </span>
+                  <div class="tool__info">
+                    <h3>Hringjatólið</h3>
+                    <p>Teiknar hringi og sporbaug. Gott fyrir sól, laug og vatnsdropa.</p>
+                    <span class="tool__shortcut">Flýtilykill: O</span>
+                  </div>
+                </article>
+                <article class="card card--mini tool">
+                  <span class="tool__icon" aria-hidden="true">
+                    <span class="iconify" data-icon="mdi:ray-start"></span>
+                  </span>
+                  <div class="tool__info">
+                    <h3>Línutólið</h3>
+                    <p>Gerir beinar línur. Notaðu fyrir fjallshlíðar, vind og mynstralínur.</p>
+                    <span class="tool__shortcut">Flýtilykill: L</span>
+                  </div>
+                </article>
+                <article class="card card--mini tool">
+                  <span class="tool__icon" aria-hidden="true">
+                    <span class="iconify" data-icon="ph:pen-nib-straight"></span>
+                  </span>
+                  <div class="tool__info">
+                    <h3>Penninn</h3>
+                    <p>Teiknar frjáls form og sveigjur. Frábært fyrir dýr, hraun og allt milli himins og jarðar.</p>
+                    <span class="tool__shortcut">Flýtilykill: P</span>
+                  </div>
+                </article>
+                <article class="card card--mini tool">
+                  <span class="tool__icon" aria-hidden="true">
+                    <span class="iconify" data-icon="mdi:format-text"></span>
+                  </span>
+                  <div class="tool__info">
+                    <h3>Textatólið</h3>
+                    <p>Bætir texta við verkið. Settu titil, nafnið þitt eða stutta lýsingu.</p>
+                    <span class="tool__shortcut">Flýtilykill: T</span>
+                  </div>
+                </article>
+              </div>
+              <p class="step__tip">🎯 Smelltu á Color Fill hægra megin til að velja lit. Gradientar eru skemmtilegir!</p>
+            </div>
+          </article>
+
+          <article class="step step--collapsed" id="step-4" data-step-index="4">
+            <header class="step__header">
+              <div class="step__meta">
+                <span class="step__number">4</span>
+                <h2>Skapaðu Ísland</h2>
+              </div>
+              <div class="step__actions">
+                <label class="step__check">
+                  <input type="checkbox" class="step__checkbox" aria-label="Lokið skrefi 4" />
+                  <span>Lokið</span>
+                </label>
+                <button class="step__toggle" aria-expanded="false" aria-controls="step-4-content">
+                  <span class="step__toggle-icon"></span>
+                </button>
+              </div>
+            </header>
+            <div class="step__content" id="step-4-content">
+              <p>
+                Nú máttu skapa! Hugsaðu um kaldan sjó, eldfjöll, jökla, lunda eða lopapeysu.
+                Nota má einföld form eða skrýtin form. Allt er leyfilegt.
+              </p>
+              <div class="prompt-cards">
+                <article class="card card--prompt">
+                  <h3>❄️ Kuldadagur</h3>
+                  <p>Veldu ljósblá lit og hvíta punkta eins og snjókorn.</p>
+                </article>
+                <article class="card card--prompt">
+                  <h3>🔥 Eldur og hraun</h3>
+                  <p>Notaðu appelsínugulan og rauðan lit með dökkum bakgrunni.</p>
+                </article>
+                <article class="card card--prompt">
+                  <h3>🌌 Norðurljós</h3>
+                  <p>Gerðu mjúka litabreytingu frá grænu í fjólublátt fyrir himin.</p>
+                </article>
+              </div>
+              <p class="step__tip">Ctrl + D tvöfaldar form. Það sparar tíma þegar þú gerir mynstur.</p>
+            </div>
+          </article>
+
+          <article class="step step--collapsed" id="step-5" data-step-index="5">
+            <header class="step__header">
+              <div class="step__meta">
+                <span class="step__number">5</span>
+                <h2>Skoðaðu verkið</h2>
+              </div>
+              <div class="step__actions">
+                <label class="step__check">
+                  <input type="checkbox" class="step__checkbox" aria-label="Lokið skrefi 5" />
+                  <span>Lokið</span>
+                </label>
+                <button class="step__toggle" aria-expanded="false" aria-controls="step-5-content">
+                  <span class="step__toggle-icon"></span>
+                </button>
+              </div>
+            </header>
+            <div class="step__content" id="step-5-content">
+              <ol class="checklist">
+                <li>Serðu hvaða íslenska hugmynd verkið segir frá?</li>
+                <li>Passa litirnir saman eða þarf að breyta aðeins?</li>
+                <li>Er textinn skýr og form í röð?</li>
+                <li>Settu titil og nafnið þitt ef þú vilt.</li>
+              </ol>
+              <p class="step__tip">🔍 Zoomaðu út til að sjá allt verkið í einu. Færðu svo til ef þarf.</p>
+            </div>
+          </article>
+
+          <article class="step step--collapsed" id="step-6" data-step-index="6">
+            <header class="step__header">
+              <div class="step__meta">
+                <span class="step__number">6</span>
+                <h2>Deildu og skilaðu</h2>
+              </div>
+              <div class="step__actions">
+                <label class="step__check">
+                  <input type="checkbox" class="step__checkbox" aria-label="Lokið skrefi 6" />
+                  <span>Lokið</span>
+                </label>
+                <button class="step__toggle" aria-expanded="false" aria-controls="step-6-content">
+                  <span class="step__toggle-icon"></span>
+                </button>
+              </div>
+            </header>
+            <div class="step__content" id="step-6-content">
+              <p>
+                Smelltu á <strong>Share</strong>, veldu <strong>Copy link</strong> og settu „Anyone with the link can view“.
+                Límdu hlekkinn á Innu til að skila verkefninu.
+              </p>
+              <p>
+                Þú getur einnig vistað mynd (Export) og geymt hana í möppu eða sýnt vinum.
+              </p>
+              <p class="step__tip">📣 Láttu einhvern skoða verkið áður en þú skilar. Fáðu bros og gagnlega ábendingu.</p>
+            </div>
+          </article>
+        </section>
+
+        <section class="guide__extras card card--wide">
+          <h2>Aukaráð</h2>
+          <div class="extras__grid">
+            <article class="card card--mini">
+              <h3>Notaðu Frames</h3>
+              <p>Settu form og texta inn í ramma svo allt haldist snyrtilegt.</p>
+            </article>
+            <article class="card card--mini">
+              <h3>Breyttu gagnsæi</h3>
+              <p>Dragðu niður Opacity til að gera litina mildari og sjá form í gegn.</p>
+            </article>
+            <article class="card card--mini">
+              <h3>Leitaðu að tólum</h3>
+              <p>Ctrl + / opnar litla leit þar sem þú finnur verkfæri hratt.</p>
+            </article>
+            <article class="card card--mini">
+              <h3>Spurðu strax</h3>
+              <p>Segðu kennaranum ef þú festist. Það er mjög eðlilegt í hönnun.</p>
+            </article>
+          </div>
+        </section>
+
+        <footer class="guide__footer">
+          <p>Vel gert! Deildu hlekknum, skilaðu á Innu og haltu áfram að skapa.</p>
+          <p class="footer__note">Takk fyrir að taka þátt — sjáumst í næsta verkefni! 🌋</p>
+        </footer>
+      </main>
+    </div>
+  </body>
+</html>
